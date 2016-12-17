@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>	
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>TRACKING_ID</key>
+	<string>UA-68265853-2</string>
+	<key>CLIENT_ID</key>
+	<string>911237470974-mbig7g1ngcmb4rt1giq8sjcqpq86nl26.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.911237470974-mbig7g1ngcmb4rt1giq8sjcqpq86nl26</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>911237470974-uetqksvdfcg41mph1eue0j0qvlqkua33.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyD3AiKGkUzaqU50_jERDaXeT05P_nmPfgg</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.wordfiesta.free</string>
+	<key>PROJECT_ID</key>
+	<string>api-project-911237470974</string>
+	<key>IS_ADS_ENABLED</key>
+	<true/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<true/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true/>
+	<key>IS_GCM_ENABLED</key>
+	<false/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:911237470974:ios:cb92cc1552109c08</string>
+</dict>
+</plist>
