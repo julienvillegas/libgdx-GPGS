@@ -1,4 +1,4 @@
-# Google Play Games Services iOS
+# Simple LIBDX Google Play Games Services integration for iOS
 
 This sample application demonstrates the smallest self containted integration of a LibGDX game with Google Play Game Services on iOS.
 All it does is to start the application and log you into Google Play Game Services.
