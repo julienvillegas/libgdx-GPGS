@@ -27,28 +27,28 @@ The following components are required:
 #### Google Sign-In SDK for iOS
 
 * Download the [Google Sign-In SDK for iOS](https://developers.google.com/identity/sign-in/ios/sdk/). The Version you must download is `Google Sign-In SDK 4.0.0` (Version 4.0.1 won't work).
-* Open the downloaded zip file.
-* Extract `GoogleUtilities.framework` file and copy it to folder `libs`
-* Extract `GoogleSymbolUtilities.framework` file and copy it to folder `libs`
-* Extract `GoogleNetworkingUtilities.framework` file and copy it to folder `libs`
-* Extract `GoogleAppUtilities.framework` file and copy it to folder `libs`
-* Extract `GoogleAuthUtilities.framework` file and copy it to folder `libs`
-* Extract `GoogleSignIn.framework` file and copy it to folder `libs` under your 'ios' folder.
-* Extract `GoogleSignIn.bundle` file and copy to folder `resources` under your 'ios' folder.
+* Open the downloaded zip file and copy these files to the `libs` folder under your `ios` project:
+* `GoogleUtilities.framework` 
+* `GoogleSymbolUtilities.framework` 
+* `GoogleNetworkingUtilities.framework` 
+* `GoogleAppUtilities.framework` 
+* `GoogleAuthUtilities.framework` 
+* `GoogleSignIn.framework` 
+* Copy `GoogleSignIn.bundle` to folder `resources` under your `ios` folder.
 
 #### Google+ SDK for iOS
 
 * Download the [latest Google+ iOS SDK](https://developers.google.com/+/mobile/ios/getting-started)
-* Open the downloaded zip file.
-* Extract `GoogleOpenSource.framework` file and copy it to folder `libs` under your 'ios' folder.
-* Extract `GooglePlus.framework` file and copy it to folder `libs` under your 'ios' folder.
+* Open the downloaded zip file and copy these files to the `libs` folder under your `ios` project:
+* `GoogleOpenSource.framework` 
+* `GooglePlus.framework` 
 * Extract `GooglePlus.bundle` file and copy to folder `resources` under your 'ios' folder.
 
 #### Google Play Games Services SDK  
 
 1. Download the `Play Games C++ SDK Version 2.1 SDK` from https://developers.google.com/games/services/downloads/sdks
-2. Put the `gpg.framework` folder in your iOS project's `libs/` folder
-3. Put the `gpg.bundle` in your iOS project's `resources/` folder
+2. Copy file `gpg.framework` in your iOS project's `libs/` folder
+3. Copy file `gpg.bundle` in your iOS project's `resources/` folder
 
 
 ## Configuration
