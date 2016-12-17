@@ -5,8 +5,8 @@ All it does is to start the application and log you into Google Play Game Servic
 This is based on [MobiDevelop's Google Games Services Robopods](https://github.com/MobiDevelop/robovm-robopods).
 This should allow you to easily extend to include items such as Leaderboard...
 
-I have a game showcasing LibGDX using this robopods [Wordfiesta](wordfiesta.com) available for [iOS](https://itunes.apple.com/bj/app/word-fiesta-free-version/id1050452690?mt=8) and [Android](https://play.google.com/store/apps/details?id=com.wordfiesta.free_version). 
-If this sample helped you somehow, the best way to say thanks is be giving it a try.
+I have a game showcasing LibGDX using this robopods: [Wordfiesta](wordfiesta.com). It is available for [iOS](https://itunes.apple.com/bj/app/word-fiesta-free-version/id1050452690?mt=8) and [Android](https://play.google.com/store/apps/details?id=com.wordfiesta.free_version). 
+If this sample helped you somehow, the best way to say thanks is by giving it a try.
 Thank you
 
 *Note:* With Xcode 8.1 and Xcode 8.2 there is an error preventing your from running on a simulator.
@@ -17,12 +17,12 @@ Until this is addressed by Apple you will need to run it on a device.
 ## Pre-requisite
 
 It is assumed that you have:
-* Setup your IDE according to generic instruction. For this sample application I am using Android Studio and habe configured my system according to [these instructions](https://github.com/libgdx/libgdx/wiki/Setting-up-your-Development-Environment-%28Eclipse%2C-Intellij-IDEA%2C-NetBeans%29)
+* Setup your IDE according to generic instruction. For this sample application I am using Android Studio and have configured my system according to [these instructions](https://github.com/libgdx/libgdx/wiki/Setting-up-your-Development-Environment-%28Eclipse%2C-Intellij-IDEA%2C-NetBeans%29)
 * Created a LibGDX application. I have created this sample using the standard [gdx-setup wizard](https://github.com/libgdx/libgdx/wiki/Project-Setup-Gradle)
 
 ## Installation
 
-The following additional components are required:
+The following components are required:
 
 #### Google Sign-In SDK for iOS
 
@@ -145,7 +145,9 @@ Create an entry for your game in the Google Play Developer Console. This enables
 ### info.plist.xml
 
 Add the following section to your `info.plist.xml` file under your `ios` Project
+
 Important use the ID you get from the previous step IN REVERSE
+
 e.g.:
 if your ID on Google play is 123456789987-mbig7g1ngcmb4rt1giq8sjcqpq86nl26.apps.googleusercontent.com
 use: com.googleusercontent.apps.123456789987-mbig7g1ngcmb4rt1giq8sjcqpq86nl26
@@ -187,7 +189,9 @@ To do that, first we create an interface that list the platform specific method.
 This class is in our core project
 In our case we will only implement the `SignIn` method, although that can easily be extended.
 
-#### interface
+#### interface 
+
+Create `ActionResolver.java` in your `core` project
 
 ```
 package com.mygdx.game;
@@ -202,6 +206,9 @@ public interface ActionResolver {
 ##### ActionResolver Desktop
 
 No Google Games Services implementation for Dektop. Calling SignIn when running on Desktop won't do anythning.
+
+Create `ActionResolverDesktop.java` in your `desktop` project
+
 ```
 package com.mygdx.game.desktop;
 
@@ -241,6 +248,9 @@ public class DesktopLauncher {
 ##### ActionResolver Android
 
 No Google Games Services implementation for Android on this tutorial at this point. Calling SignIn when running on Android won't do anythning.
+
+Create `ActionResolverAndroid.java` in your `android` project
+
 ```
 package com.mygdx.game;
 
@@ -283,6 +293,9 @@ public class AndroidLauncher extends AndroidApplication {
 ##### ActionResolverHTML
 
 No Google Games Services implementation for HTML on this tutorial. Calling SignIn when running on Android won't do anythning.
+
+Create `ActionResolverHTML.java` in your `HTML` project
+
 ```
 package com.mygdx.game.client;
 
@@ -325,6 +338,8 @@ public class HtmlLauncher extends GwtApplication {
 
 This is one the iOS Action Resolver is implemented. The one which is of interest for this sample.
 Set CLIENT_ID in the code below to  your Google Games Services ID as seen previously.
+
+Create `ActionResolverIOS.java` in your `ios` project
 
 ```
 package com.mygdx.game;
