@@ -1,17 +1,17 @@
 # Google Play Games Services iOS
 
-This sample application demonstrates how to integrate a LibGDX game with Google Play Game Services on iOS.
-This is based on MobiDevelop's RoboVM fork which provide a set convenience methods to integrate.
-The output is the standard libGDX setup logo. in the background as soon as the logo is shown it will try to sign-in.
+This sample application demonstrates the smallest self containted integration of a LibGDX game with Google Play Game Services on iOS.
+All it does is to start the application and log you into Google Play Game Services.
+This is based on [MobiDevelop's Google Games Services Robopods](https://github.com/MobiDevelop/robovm-robopods).
+This should allow you to easily extend to include items such as Leaderboard...
 
-
-I have a game showcasing LibGDX using this robopods Wordfiesta available for [iOS](https://itunes.apple.com/bj/app/word-fiesta-free-version/id1050452690?mt=8) and [Android](https://play.google.com/store/apps/details?id=com.wordfiesta.free_version). 
+I have a game showcasing LibGDX using this robopods [Wordfiesta](wordfiesta.com) available for [iOS](https://itunes.apple.com/bj/app/word-fiesta-free-version/id1050452690?mt=8) and [Android](https://play.google.com/store/apps/details?id=com.wordfiesta.free_version). 
 If this sample helped you somehow, the best way to say thanks is be giving it a try.
 Thank you
 
-Note: With Xcode 8.1 and Xcode 8.2 there is an error preventing your from running on a simulator.
-You will get an error: [GPGManager signIn:didSignInForUser:withError:]:[main] FAILED LOGGING INTO GOOGLE PLUS GAMES
-
+*Note:* With Xcode 8.1 and Xcode 8.2 there is an error preventing your from running on a simulator.
+You will get an error: `[GPGManager signIn:didSignInForUser:withError:]:[main] FAILED LOGGING INTO GOOGLE PLUS GAMES`
+Until this is addressed by Apple you will need to run it on a device.
 
 
 ## Pre-requisite
