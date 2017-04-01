@@ -28,17 +28,17 @@
     <orderEntry type="jdk" jdkName="RoboVM SDK 2.2.1-SNAPSHOT" jdkType="RoboVM SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="core" exported="" />
-    <orderEntry type="library" exported="" name="robopods-google-signin-ios-2.2.1-SNAPSHOT" level="project" />
-    <orderEntry type="library" exported="" name="robopods-google-apis-ios-2.2.1-SNAPSHOT" level="project" />
-    <orderEntry type="library" exported="" name="robopods-google-play-games-ios-2.2.1-SNAPSHOT" level="project" />
-    <orderEntry type="library" exported="" name="gdx-backend-robovm-1.9.4" level="project" />
-    <orderEntry type="library" exported="" name="gdx-platform-1.9.4-natives-ios" level="project" />
-    <orderEntry type="library" exported="" name="gdx-box2d-platform-1.9.4-natives-ios" level="project" />
-    <orderEntry type="library" exported="" name="gdx-1.9.4" level="project" />
-    <orderEntry type="library" exported="" name="gdx-box2d-1.9.4" level="project" />
-    <orderEntry type="library" exported="" name="robovm-rt-2.2.1-SNAPSHOT" level="project" />
-    <orderEntry type="library" exported="" name="robovm-objc-2.2.1-SNAPSHOT" level="project" />
-    <orderEntry type="library" exported="" name="robovm-cocoatouch-2.2.1-SNAPSHOT" level="project" />
+    <orderEntry type="library" exported="" name="robovm-rt-2.3.0" level="project" />
+    <orderEntry type="library" exported="" name="robovm-cocoatouch-2.3.0" level="project" />
+    <orderEntry type="library" exported="" name="robopods-google-signin-ios-2.2.2-SNAPSHOT" level="project" />
+    <orderEntry type="library" exported="" name="robopods-google-apis-ios-2.2.2-SNAPSHOT" level="project" />
+    <orderEntry type="library" exported="" name="robopods-google-play-games-ios-2.2.2-SNAPSHOT" level="project" />
+    <orderEntry type="library" exported="" name="gdx-backend-robovm-1.9.6" level="project" />
+    <orderEntry type="library" exported="" name="gdx-platform-1.9.6-natives-ios" level="project" />
+    <orderEntry type="library" exported="" name="gdx-box2d-platform-1.9.6-natives-ios" level="project" />
+    <orderEntry type="library" exported="" name="gdx-1.9.6" level="project" />
+    <orderEntry type="library" exported="" name="gdx-box2d-1.9.6" level="project" />
+    <orderEntry type="library" exported="" name="robovm-objc-2.3.0" level="project" />
     <orderEntry type="library" exported="" name="ios.ios-1.0" level="project" />
   </component>
 </module>

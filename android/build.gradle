@@ -1,6 +1,6 @@
 android {
-    buildToolsVersion "23.0.3"
-    compileSdkVersion 24
+    buildToolsVersion "23.0.1"
+    compileSdkVersion 20
     sourceSets {
         main {
             manifest.srcFile 'AndroidManifest.xml'
@@ -19,8 +19,10 @@ android {
     }
     defaultConfig {
         applicationId "com.mygdx.game"
-        minSdkVersion 9
-        targetSdkVersion 24
+        minSdkVersion 15
+        targetSdkVersion 20
+
+        multiDexEnabled true
     }
 }
 
@@ -125,5 +127,6 @@ idea {
     }
 }
     dependencies {
-  compile 'com.google.android.gms:play-services-auth:10.0.1'
+        compile 'com.google.android.gms:play-services-auth:10.0.1'
+        compile 'com.android.support:multidex:1.0.0'
 }

@@ -1,20 +1,27 @@
 # Simple LibGDX Google Play Games Services integration for iOS
 
-This test application is a small self-contained integration of a LibGDX game with Google Play Game Services on iOS.
+## WARNING: iOS <> Google play Game Services no longer supported
+
+WARNING: Google no longer supports the creation of Google Play account for iOS users according to [this blog](https://github.com/playgameservices/ios-basic-samples/issues/11)
+
+more information on [LibGDX Forum](http://www.badlogicgames.com/forum/viewtopic.php?f=11&t=25674&p=101322&hilit=google+play+game#p101322)
+
+Therefore only existing Google Play Game Services account will be able to connect. 
+This basically means that you should not integrate your iOS game with Google Play Game Services.
+
+## INTRODUCTION
+
+This test application WAS (see warning above) a small self-contained integration of a LibGDX game with Google Play Game Services on iOS.
 All it does is to start the application and log you into Google Play Game Services.
 This is based on [MobiDevelop's Google Games Services Robopods](https://github.com/MobiDevelop/robovm-robopods).
 This should allow you to easily extend to include items such as Leaderboard...
 
-I have a game showcasing LibGDX using this robopods: [Wordfiesta](wordfiesta.com). It is available for [iOS](https://itunes.apple.com/bj/app/word-fiesta-free-version/id1050452690?mt=8) and [Android](https://play.google.com/store/apps/details?id=com.wordfiesta.free_version). 
+I have a game showcasing LibGDX using this robopods: [Wordfiesta](http://wordfiesta.com/). It is available for [iOS](https://itunes.apple.com/bj/app/word-fiesta-free-version/id1050452690?mt=8) and [Android](https://play.google.com/store/apps/details?id=com.wordfiesta.free_version). 
 If this sample helped you somehow, the best way to say thanks is by giving it a try.
 Thank you
 
-*Note:* With Xcode 8.1 and Xcode 8.2 there is an error preventing your from running on a simulator.
-You will get an error: `[GPGManager signIn:didSignInForUser:withError:]:[main] FAILED LOGGING INTO GOOGLE PLUS GAMES`
-Until this is addressed by Apple you will need to run it on a device.
 
-
-## Pre-requisite
+## Pre-requisites
 
 It is assumed that you have:
 * Setup your IDE according to generic instruction. For this sample application I am using Android Studio and have configured my system according to [these instructions](https://github.com/libgdx/libgdx/wiki/Setting-up-your-Development-Environment-%28Eclipse%2C-Intellij-IDEA%2C-NetBeans%29)
@@ -97,7 +104,7 @@ allprojects {
         appName = "sample_ios_google_signin"
         gdxVersion = '1.9.4'
         roboVMVersion = '2.2.0'
-        robopodsVersion = '2.2.1-SNAPSHOT'				// Add
+        robopodsVersion = '2.2.1-SNAPSHOT'				
         box2DLightsVersion = '1.4'
         ashleyVersion = '1.7.0'
         aiVersion = '1.8.0'
@@ -118,11 +125,11 @@ project(":ios") {
 
     dependencies {
         compile project(":core")
-        compile "com.mobidevelop.robovm:robovm-rt:$roboVMVersion"							// Update
-        compile "com.mobidevelop.robovm:robovm-cocoatouch:$roboVMVersion"					// Update
-        compile "com.mobidevelop.robovm:robopods-google-signin-ios:$robopodsVersion"		// Update
-        compile "com.mobidevelop.robovm:robopods-google-apis-ios:$robopodsVersion"			// Update
-        compile "com.mobidevelop.robovm:robopods-google-play-games-ios:$robopodsVersion"	// Update
+        compile "com.mobidevelop.robovm:robovm-rt:$roboVMVersion"							
+        compile "com.mobidevelop.robovm:robovm-cocoatouch:$roboVMVersion"					
+        compile "com.mobidevelop.robovm:robopods-google-signin-ios:$robopodsVersion"		
+        compile "com.mobidevelop.robovm:robopods-google-apis-ios:$robopodsVersion"			
+        compile "com.mobidevelop.robovm:robopods-google-play-games-ios:$robopodsVersion"	
 
         compile "com.badlogicgames.gdx:gdx-backend-robovm:$gdxVersion"
         compile "com.badlogicgames.gdx:gdx-platform:$gdxVersion:natives-ios"
