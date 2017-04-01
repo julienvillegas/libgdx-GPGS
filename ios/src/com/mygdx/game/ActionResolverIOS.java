@@ -1,7 +1,5 @@
 package com.mygdx.game;
 
-import com.badlogic.gdx.Gdx;
-
 import org.robovm.apple.foundation.Foundation;
 import org.robovm.apple.foundation.NSError;
 import org.robovm.apple.uikit.UIApplication;
@@ -50,10 +48,12 @@ public class ActionResolverIOS implements ActionResolver {
 
     @Override
     public void signIn() {
-
-        Gdx.app.log("ActionResolverIOS:signIn", "Starting SignIn");
         GPGManager.getSharedInstance().signIn(CLIENT_ID, true);
-        Gdx.app.log("ActionResolverIOS:signIn", "Ending SignIn");
+    }
+
+    @Override
+    public void signOut() {
+        GPGManager.getSharedInstance().signOut();
     }
 
 }

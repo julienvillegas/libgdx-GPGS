@@ -7,4 +7,5 @@ package com.mygdx.game;
 public interface ActionResolver {
 
     public void signIn();
+    public void signOut();
 }

@@ -1,13 +1,18 @@
 package com.mygdx.game;
 
+import com.google.example.games.basegameutils.GameHelper;
+
 /**
  * Created by julienvillegas on 09/12/2016.
  */
 
-public class ActionResolverAndroid implements ActionResolver{
+public class ActionResolverAndroid  {
+    private GameHelper gameHelper;
 
-    @Override
-    public void signIn() {
+    AndroidLauncher localApp;
+    public ActionResolverAndroid(AndroidLauncher app){
 
     }
+
+
 }

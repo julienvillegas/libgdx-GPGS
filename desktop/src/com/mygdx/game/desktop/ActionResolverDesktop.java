@@ -1,5 +1,6 @@
 package com.mygdx.game.desktop;
 
+import com.badlogic.gdx.Gdx;
 import com.mygdx.game.ActionResolver;
 
 /**
@@ -11,6 +12,11 @@ public class ActionResolverDesktop implements ActionResolver {
 
     @Override
     public void signIn() {
+        Gdx.app.log("SignIn","Dummy SignIn");
+    }
 
+    @Override
+    public void signOut() {
+        Gdx.app.log("SignOut","Dummy SignOut");
     }
 }
