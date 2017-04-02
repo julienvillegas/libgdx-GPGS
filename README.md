@@ -1,17 +1,13 @@
 # Simple LibGDX Google Play Games Services integration for iOS
 
-## WARNING: iOS <> Google play Game Services no longer supported
-
 WARNING: Google no longer supports the creation of Google Play account for iOS users according to [this blog](https://github.com/playgameservices/ios-basic-samples/issues/11)
-
 more information on [LibGDX Forum](http://www.badlogicgames.com/forum/viewtopic.php?f=11&t=25674&p=101322&hilit=google+play+game#p101322)
-
 Therefore only existing Google Play Game Services account will be able to connect. 
-This basically means that you should not integrate your iOS game with Google Play Game Services.
+The truth is that a user probably won't create a Google play game service account in your game if (s)he does not already have one.
 
 ## INTRODUCTION
 
-This test application WAS (see warning above) a small self-contained integration of a LibGDX game with Google Play Game Services on iOS.
+This test application is a small self-contained integration of a LibGDX game with Google Play Game Services on iOS.
 All it does is to start the application and log you into Google Play Game Services.
 This is based on [MobiDevelop's Google Games Services Robopods](https://github.com/MobiDevelop/robovm-robopods).
 This should allow you to easily extend to include items such as Leaderboard...
