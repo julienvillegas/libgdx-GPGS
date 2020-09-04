@@ -88,7 +88,7 @@ Apply the following changes to your `robovm.xml` file:
 ### Gradle
 
 Make the following changes to your `build.gradle` file.
-Note that I had to use the 2.2.1-SNAPSHOT for robopods. the 2.2.0 version did not work for me.
+Note that I had to use the 2.2.2-SNAPSHOT for robopods. 
 
 ```
 allprojects {
@@ -98,9 +98,9 @@ allprojects {
     version = '1.0'
     ext {
         appName = "sample_ios_google_signin"
-        gdxVersion = '1.9.4'
-        roboVMVersion = '2.2.0'
-        robopodsVersion = '2.2.1-SNAPSHOT'				
+        gdxVersion = '1.9.6'
+        roboVMVersion = '2.3.0'
+        robopodsVersion = '2.2.2-SNAPSHOT'
         box2DLightsVersion = '1.4'
         ashleyVersion = '1.7.0'
         aiVersion = '1.8.0'
@@ -166,7 +166,7 @@ use: com.googleusercontent.apps.123456789987-mbig7g1ngcmb4rt1giq8sjcqpq86nl26
             <string>com.googleusercontent.apps.1234567890-qweasdzxcqweasdzxc321456</string>
             <key>CFBundleURLSchemes</key>
             <array>
-               <string>com.googleusercontent.apps.911237470974-qweasdzxcqweasdzxc321456</string>
+               <string>com.googleusercontent.apps.1234567890-qweasdzxcqweasdzxc321456</string>
              </array>
          </dict>
          <dict>
